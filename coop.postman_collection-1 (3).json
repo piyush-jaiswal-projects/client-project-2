@@ -1,0 +1,708 @@
+{
+	"variables": [],
+	"info": {
+		"name": "coop",
+		"_postman_id": "84e8a8ba-0a43-7bbf-ee72-7185114263dd",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "supplier",
+			"description": "",
+			"item": [
+				{
+					"name": "get all supps",
+					"request": {
+						"url": "http://127.0.0.1:8000/supps",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "get one supplier",
+					"request": {
+						"url": {
+							"raw": "http://127.0.0.1:8000/supp?id=100",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"supp"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "100",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "create supplier",
+					"request": {
+						"url": "http://127.0.0.1:8000/supp",
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "TEst Branch ",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "branchname",
+									"value": "ibra",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "number",
+									"value": "999999",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "update supplier",
+					"request": {
+						"url": "http://127.0.0.1:8000/supp",
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "TEst Branch ibra",
+									"type": "text",
+									"description": "",
+									"disabled": true
+								},
+								{
+									"key": "branchname",
+									"value": "ibra",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "number",
+									"value": "999",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "id",
+									"value": "198",
+									"type": "text",
+									"description": ""
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "delete supplier",
+					"request": {
+						"url": "http://127.0.0.1:8000/supp",
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "196",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "product",
+			"description": "",
+			"item": [
+				{
+					"name": "get products",
+					"request": {
+						"url": "http://127.0.0.1:8000/prods",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "get one product",
+					"request": {
+						"url": {
+							"raw": "http://127.0.0.1:8000/prod?id=2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"prod"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "create product",
+					"request": {
+						"url": "http://127.0.0.1:8000/prod",
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "ibrahim",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "description",
+									"value": "this is my store just to test the function",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "price",
+									"value": "151",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "unit",
+									"value": "KG",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "unit_size",
+									"value": "1.65",
+									"type": "text",
+									"description": ""
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "update product",
+					"request": {
+						"url": "http://127.0.0.1:8000/prod",
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "3",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "name",
+									"value": "ibrahimSF",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "description",
+									"value": "this is my store just to test the function",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "price",
+									"value": "151",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "unit",
+									"value": "KG",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "unit_size",
+									"value": "1.65",
+									"type": "text",
+									"description": ""
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "delete product",
+					"request": {
+						"url": "http://127.0.0.1:8000/prod",
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "2",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "user",
+			"description": "",
+			"item": [
+				{
+					"name": "get users",
+					"request": {
+						"url": "http://127.0.0.1:8000/users",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "get one user",
+					"request": {
+						"url": {
+							"raw": "http://127.0.0.1:8000/user?id=2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"user"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "create user",
+					"request": {
+						"url": "http://127.0.0.1:8000/user",
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "fname",
+									"value": "ibrahimC",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "lname",
+									"value": "alkandari",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "email",
+									"value": "e.alkandary@gmail.com",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "phone",
+									"value": "96700447",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "pass",
+									"value": "5643795",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "role",
+									"value": "Admin",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "update user",
+					"request": {
+						"url": "http://127.0.0.1:8000/user",
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "user_id",
+									"value": "1",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "fname",
+									"value": "ibrahim",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "lname",
+									"value": "alkandari",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "email",
+									"value": "e.alkandary1@gmail.com",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "phone",
+									"value": "96700447",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "role",
+									"value": "Admin",
+									"type": "text",
+									"description": ""
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "delete user",
+					"request": {
+						"url": "http://127.0.0.1:8000/user",
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "3",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "login user",
+					"request": {
+						"url": "http://127.0.0.1:8000/user/login",
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "phone",
+									"value": "96700447",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "pass",
+									"value": "5643795",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "order",
+			"description": "",
+			"item": [
+				{
+					"name": "get orders",
+					"request": {
+						"url": "http://127.0.0.1:8000/orders",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "get one order",
+					"request": {
+						"url": {
+							"raw": "http://127.0.0.1:8000/order?id=2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"order"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "create order",
+					"request": {
+						"url": "http://127.0.0.1:8000/order",
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "supp_id",
+									"value": "3",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "createdby_id",
+									"value": "1",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "purchase_order_no",
+									"value": "999999",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "products",
+									"value": "[{\"product_id\":1,\"qnt\":8,\"free_qnt\":0,\"total_p\":23.2},{\"product_id\":4,\"qnt\":8,\"free_qnt\":0,\"total_p\":23.2}]",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "",
+									"description": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "update order",
+					"request": {
+						"url": "http://127.0.0.1:8000/order",
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "order_id",
+									"value": "1",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "supp_id",
+									"value": "3",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "updatedby_user_id",
+									"value": "1",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "purchase_order_no",
+									"value": "999999",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "products",
+									"value": "[{\"product_id\":1,\"order_id\":1,\"qnt\":8,\"free_qnt\":0,\"total_p\":23.2},{\"product_id\":4,\"qnt\":2,\"free_qnt\":0,\"total_p\":5.8}]",
+									"type": "text",
+									"description": ""
+								},
+								{
+									"key": "purchase_order_no",
+									"value": "123456",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "delivered",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "assigned_to_user_id",
+									"value": "2",
+									"description": "",
+									"type": "text"
+								},
+								{
+									"key": "isReviewed",
+									"value": "Y",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "delete order",
+					"request": {
+						"url": "http://127.0.0.1:8000/order",
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "1",
+									"description": "",
+									"type": "text"
+								}
+							]
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
