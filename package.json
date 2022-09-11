@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/piyush-jaiswal-projects/tech-startup-website.git"
+    "url": "git+https://github.com/piyush-jaiswal-projects/client-project-2.git"
   },
   "author": "Piyush Jaiswal",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/piyush-jaiswal-projects/tech-startup-website/issues"
+    "url": "https://github.com/piyush-jaiswal-projects/client-project-2/issues"
   },
-  "homepage": "https://github.com/piyush-jaiswal-projects/tech-startup-website#readme",
+  "homepage": "https://github.com/piyush-jaiswal-projects/client-project-2#readme",
   "dependencies": {
     "body-parser": "^1.20.0",
     "concurrently": "^7.3.0",
