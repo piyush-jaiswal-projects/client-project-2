@@ -1,2 +1,1 @@
-# tech-startup-website
-A website for a technology startup.
+CLIENT -2 Project
